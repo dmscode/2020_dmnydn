@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>代码能有多难？</title>
+  
+  <subtitle>写给前端新人的故事书</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://dmnydn.com/"/>
+  <updated>2019-07-26T00:08:15.991Z</updated>
+  <id>https://dmnydn.com/</id>
+  
+  <author>
+    <name>稻米鼠</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World!</title>
+    <link href="https://dmnydn.com/hello-world/"/>
+    <id>https://dmnydn.com/hello-world/</id>
+    <published>2019-07-09T23:47:20.000Z</published>
+    <updated>2019-07-26T00:08:15.991Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;代码写多了，最开始一定要 “Hello world！” 一下才觉得踏实。&lt;/p&gt;
+&lt;p&gt;大家好，我是&lt;strong&gt;稻米鼠&lt;/strong&gt;。对，就是那个给大家讲前端，最近人气凉凉的小老鼠。（BGM
+        
+      
+    
+    </summary>
+    
+    
+      <category term="courses" scheme="https://dmnydn.com/categories/courses/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>0001 五分钟从零到写网页？！</title>
+    <link href="https://dmnydn.com/post-0001/"/>
+    <id>https://dmnydn.com/post-0001/</id>
+    <published>2019-07-18T06:29:08.000Z</published>
+    <updated>2019-07-30T06:11:42.575Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div class=&quot;chat left&quot;&gt;
+        &lt;div class=&quot;chat-logo&quot; data-author=&quot;喵小白&quot;&gt;&lt;/div&gt;
+        &lt;div
+        
+      
+    
+    </summary>
+    
+    
+      <category term="courses" scheme="https://dmnydn.com/categories/courses/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tip-001：Visual Studio Code</title>
+    <link href="https://dmnydn.com/post-0001/tip-001/"/>
+    <id>https://dmnydn.com/post-0001/tip-001/</id>
+    <published>2019-07-18T06:29:08.000Z</published>
+    <updated>2019-07-30T06:13:02.399Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Visual Studio Code 是微软开发的一款跨平台编辑器，自带了许多实用的功能，开箱即用，支持代码提示和补全，天生前端友好。非常适合作为前端入门的第一款编辑器。&lt;/p&gt;
+&lt;p&gt;请注意一定在官方网址（&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tip-002：设置 VS Code 的显示语言</title>
+    <link href="https://dmnydn.com/post-0001/tip-002/"/>
+    <id>https://dmnydn.com/post-0001/tip-002/</id>
+    <published>2019-07-18T06:29:08.000Z</published>
+    <updated>2019-07-30T06:15:48.293Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在前期的使用过程中，其实英文真的不会造成多大影响，因为菜单什么的，基本不用去看，所以显示语言并不需要修改。&lt;/p&gt;
+&lt;p&gt;如果想要修改，也很简单，只是可能和我们日常设置软件的操作不太一样而已。&lt;/p&gt;
+&lt;p&gt;首先打开编辑器，然后按下快捷键 &lt;kbd&gt;F1&lt;/kbd&gt; 或者
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tip-003：编程语言是个啥</title>
+    <link href="https://dmnydn.com/post-0001/tip-003/"/>
+    <id>https://dmnydn.com/post-0001/tip-003/</id>
+    <published>2019-07-28T10:27:44.000Z</published>
+    <updated>2019-07-30T06:20:08.237Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、是什么&quot;&gt;&lt;a href=&quot;#一、是什么&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tip-004：代码提示和自动完成</title>
+    <link href="https://dmnydn.com/post-0001/tip-004/"/>
+    <id>https://dmnydn.com/post-0001/tip-004/</id>
+    <published>2019-07-29T23:48:01.000Z</published>
+    <updated>2019-07-30T06:23:18.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、提示和补全&quot;&gt;&lt;a href=&quot;#一、提示和补全&quot; class=&quot;headerlink&quot; title=&quot;一、提示和补全&quot;&gt;&lt;/a&gt;一、提示和补全&lt;/h2&gt;&lt;p&gt;一个感叹号，一个
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tip-005：网页模板初识</title>
+    <link href="https://dmnydn.com/post-0001/tip-005/"/>
+    <id>https://dmnydn.com/post-0001/tip-005/</id>
+    <published>2019-07-30T00:25:31.000Z</published>
+    <updated>2019-07-30T06:27:46.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;生成的这一大段代码，是一个基础的 HTML 网页模板。注意：这是 &lt;img src=&quot;/images/html5.png&quot;&gt;&lt;strong&gt;HTML5&lt;/strong&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+    
+    
+  </entry>
+  
+</feed>

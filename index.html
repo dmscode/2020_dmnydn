@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+<link rel="stylesheet" href="/css/default-style.css">
+
+    <link rel="alternate" href="/atom.xml" title="代码能有多难？">
+    <title>代码能有多难？</title>
+    <meta name="author" content="稻米鼠">
+    
+    <meta name="description" content="《代码能有多难？》是稻米鼠写给前端新人的零基础入门教程。希望可以帮助大家认识，了解前端，知道它是什么，都有什么，能做些什么。然后可以判断自己是否要学下去，学了它能做什么，好不好学，该怎么学，往哪个方向去学……希望我的努力，可以扶助大家走过入门第一程。">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+    
+<script src="/js/popper.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/highlight.9.15.6.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('pre').each(function(){
+          const lang = $(this).find('code').first().attr('class').replace(/^.*(html|css|javsscript|js).*$/i, '$1').replace(/javascript/gi, 'js').toUpperCase()
+          $(this).attr('data-lang-name', lang)
+          // hljs.highlightBlock(this)
+        })
+        hljs.initHighlighting()
+        // add line num
+        $('pre > code').each(function(){
+          const codeArray = $(this).html().split('\n')
+          let result = ""
+          codeArray.forEach((code, lineNum) => {
+            if(code!=='' || lineNum !== codeArray.length-1){
+              result += '<div class="code-line" data-line-num="'+lineNum+'">'+code.replace(/(?<=^\s*?)( {2}|\t)/g, '<span class="one-tab"></span>')+'</div>'
+            }
+          })
+          $(this).html(result)
+        })
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128881873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128881873-1');
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="代码能有多难？" type="application/atom+xml">
+</head>
+  <body>
+<header class="container-fluid">
+  <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
+  <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
+    <small>
+        写给前端新人的故事书
+    </small>
+  </h1>
+  <nav class="nav justify-content-center">
+    
+      <!-- <a href="/" title="首页" class="nav-link active">首页</a> -->
+      <a href="/" title="首页" class="nav-link active">首页</a>
+    
+      <!-- <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a> -->
+      <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a>
+    
+      <!-- <a href="/about/" title="关于" class="nav-link">关于</a> -->
+      <a href="/about/" title="关于" class="nav-link">关于</a>
+    
+  </nav>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
+      <article id="index">
+  
+  <ul>
+    
+      <li>
+        <h2><a href="/hello-world/" title="Hello World!">Hello World!</a></h2>
+        <div class="desc">
+          <a href="/hello-world/" title="Hello World!">
+            小老鼠最近遇到了一点头疼的事情，写下来请大家做个见证。（不许笑，再笑老鼠就哭了…… <span>More ></span>
+          </a>
+        </div>
+        <ul class="tips">
+            
+        </ul>
+      </li>
+    
+      <li>
+        <h2><a href="/post-0001/" title="0001 五分钟从零到写网页？！">0001 五分钟从零到写网页？！</a></h2>
+        <div class="desc">
+          <a href="/post-0001/" title="0001 五分钟从零到写网页？！">
+            在最短的时间内，让新人写一个网页出来，直观的了解写网页是怎么一回事。 <span>More ></span>
+          </a>
+        </div>
+        <ul class="tips">
+            
+              <li>
+                <a href="/post-0001/tip-001/" title="Tip-001：Visual Studio Code" class="tip-link" target="_blank">Tip-001：Visual Studio Code</a>
+              </li>
+          
+              <li>
+                <a href="/post-0001/tip-002/" title="Tip-002：设置 VS Code 的显示语言" class="tip-link" target="_blank">Tip-002：设置 VS Code 的显示语言</a>
+              </li>
+          
+              <li>
+                <a href="/post-0001/tip-003/" title="Tip-003：编程语言是个啥" class="tip-link" target="_blank">Tip-003：编程语言是个啥</a>
+              </li>
+          
+              <li>
+                <a href="/post-0001/tip-004/" title="Tip-004：代码提示和自动完成" class="tip-link" target="_blank">Tip-004：代码提示和自动完成</a>
+              </li>
+          
+              <li>
+                <a href="/post-0001/tip-005/" title="Tip-005：网页模板初识" class="tip-link" target="_blank">Tip-005：网页模板初识</a>
+              </li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+</article>
+<nav id="cat-nav" class="justify-content-center">
+<span class="page-number current">1</span>
+</nav>
+
+<!--  -->
+    </div>
+  </div>
+</div>
+    <footer class="text-center">
+      Copyright by 
+      <a href="https://dmnydn.com">代码能有多难？（https://dmnydn.com）</a> 2018 — 2020
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+<link rel="stylesheet" href="/css/default-style.css">
+
+    <link rel="alternate" href="/atom.xml" title="代码能有多难？">
+    <title>Tip-004：代码提示和自动完成 | 代码能有多难？</title>
+    <meta name="author" content="稻米鼠">
+    
+    <meta name="description" content="">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+    
+<script src="/js/popper.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/highlight.9.15.6.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('pre').each(function(){
+          const lang = $(this).find('code').first().attr('class').replace(/^.*(html|css|javsscript|js).*$/i, '$1').replace(/javascript/gi, 'js').toUpperCase()
+          $(this).attr('data-lang-name', lang)
+          // hljs.highlightBlock(this)
+        })
+        hljs.initHighlighting()
+        // add line num
+        $('pre > code').each(function(){
+          const codeArray = $(this).html().split('\n')
+          let result = ""
+          codeArray.forEach((code, lineNum) => {
+            if(code!=='' || lineNum !== codeArray.length-1){
+              result += '<div class="code-line" data-line-num="'+lineNum+'">'+code.replace(/(?<=^\s*?)( {2}|\t)/g, '<span class="one-tab"></span>')+'</div>'
+            }
+          })
+          $(this).html(result)
+        })
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128881873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128881873-1');
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="代码能有多难？" type="application/atom+xml">
+</head>
+  <body>
+<header class="container-fluid">
+  <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
+  <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
+    <small>
+        写给前端新人的故事书
+    </small>
+  </h1>
+  <nav class="nav justify-content-center">
+    
+      <!-- <a href="/" title="首页" class="nav-link">首页</a> -->
+      <a href="/" title="首页" class="nav-link">首页</a>
+    
+      <!-- <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a> -->
+      <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a>
+    
+      <!-- <a href="/about/" title="关于" class="nav-link">关于</a> -->
+      <a href="/about/" title="关于" class="nav-link">关于</a>
+    
+  </nav>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
+      <article id="post">
+  <h1 class="title">
+    Tip-004：代码提示和自动完成
+  </h1>
+  <div class="post-content">
+    <h2 id="一、提示和补全"><a href="#一、提示和补全" class="headerlink" title="一、提示和补全"></a>一、提示和补全</h2><p>一个感叹号，一个 <kbd>Tab</kbd>，就变成了一大堆代码，让我们不由得发出深深的赞叹。</p>
+<p>首先，这是编辑器知道我们使用了什么编程语言以后，打的优秀辅助。（参见：<a href="/post-0001/tip-003/" title="Tip-003：编程语言是个啥" class="tip-link" target="_blank">Tip-003：编程语言是个啥</a>）</p>
+<p>大家不都说自己英文不好，不喜欢背单词，记不住，太复杂……等等借口么。现在全不存在啦。你只要打两个字母，编辑器就开始提示，也就是说你记得单词大概长什么样子就行，然后看着提示选择。</p>
+<p>当然不只有单词，复杂的结构也有的，你选择到对应的提示上，按一下  <kbd>Tab</kbd>，编辑器就自己把相应的内容写出来了。这叫自动补全/自动完成。反正，一个优秀的编辑器，你给点提示，它就自己写代码了。</p>
+<h2 id="二、Emmet"><a href="#二、Emmet" class="headerlink" title="二、Emmet"></a>二、Emmet</h2><p>HTML 和 CSS 里面一个重要代码补全方案是 Emmet，旧名（Zen Coding）。这些就是作为了解，不用记啦。</p>
+<p>这个方案十分简便，强大，经常打几个字就能出来一大堆代码，超爽的说。有兴趣的可以学习一下它的语法，不过这应该是在学习完 CSS 之后的事情。虽然它很简单，但是没有相应的基础，还是没法理解呀。</p>
+<p>在 VS Code 里面，自带了 Emmet 方案，就很省心，很舒适。不过，它是通过自身的代码补全功能来顺便实现的，所以在一些细节上，和标准的 Emmet 有些出入。</p>
+<p>作为新人，这些不重要，爽就完了~</p>
+
+  </div>
+  <nav id="article-nav">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        
+        <a class="page-link" href="/post-0001/" title="0001 五分钟从零到写网页？！">点此回到相关教程<span class="sr-only">点此回到相关教程</span></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="my-coffee">
+  <hr>
+  <h3 class="text-center">扫码解救小老鼠~</h3>
+  <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
+    <div>
+      <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/AliPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/QQPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+  </div>
+</div>
+  <div class="foot-tip">
+  <p>这只是一个培养兴趣，引导入门的启蒙读物，请不要太过较真。也请读者多多查阅 <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN Web 文档</a>，获得更权威的技术细节。</p>
+
+</div>
+</article>
+    </div>
+  </div>
+</div>
+    <footer class="text-center">
+      Copyright by 
+      <a href="https://dmnydn.com">代码能有多难？（https://dmnydn.com）</a> 2018 — 2020
+    </footer>
+  </body>
+</html>

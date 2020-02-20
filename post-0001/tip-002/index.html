@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+<link rel="stylesheet" href="/css/default-style.css">
+
+    <link rel="alternate" href="/atom.xml" title="代码能有多难？">
+    <title>Tip-002：设置 VS Code 的显示语言 | 代码能有多难？</title>
+    <meta name="author" content="稻米鼠">
+    
+    <meta name="description" content="">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+    
+<script src="/js/popper.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/highlight.9.15.6.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('pre').each(function(){
+          const lang = $(this).find('code').first().attr('class').replace(/^.*(html|css|javsscript|js).*$/i, '$1').replace(/javascript/gi, 'js').toUpperCase()
+          $(this).attr('data-lang-name', lang)
+          // hljs.highlightBlock(this)
+        })
+        hljs.initHighlighting()
+        // add line num
+        $('pre > code').each(function(){
+          const codeArray = $(this).html().split('\n')
+          let result = ""
+          codeArray.forEach((code, lineNum) => {
+            if(code!=='' || lineNum !== codeArray.length-1){
+              result += '<div class="code-line" data-line-num="'+lineNum+'">'+code.replace(/(?<=^\s*?)( {2}|\t)/g, '<span class="one-tab"></span>')+'</div>'
+            }
+          })
+          $(this).html(result)
+        })
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128881873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128881873-1');
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="代码能有多难？" type="application/atom+xml">
+</head>
+  <body>
+<header class="container-fluid">
+  <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
+  <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
+    <small>
+        写给前端新人的故事书
+    </small>
+  </h1>
+  <nav class="nav justify-content-center">
+    
+      <!-- <a href="/" title="首页" class="nav-link">首页</a> -->
+      <a href="/" title="首页" class="nav-link">首页</a>
+    
+      <!-- <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a> -->
+      <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a>
+    
+      <!-- <a href="/about/" title="关于" class="nav-link">关于</a> -->
+      <a href="/about/" title="关于" class="nav-link">关于</a>
+    
+  </nav>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
+      <article id="post">
+  <h1 class="title">
+    Tip-002：设置 VS Code 的显示语言
+  </h1>
+  <div class="post-content">
+    <p>在前期的使用过程中，其实英文真的不会造成多大影响，因为菜单什么的，基本不用去看，所以显示语言并不需要修改。</p>
+<p>如果想要修改，也很简单，只是可能和我们日常设置软件的操作不太一样而已。</p>
+<p>首先打开编辑器，然后按下快捷键 <kbd>F1</kbd> 或者 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> 打开命令栏，然后输入 <code>language</code>，就是语言的意思，太长了？输入 <code>lang</code> 就够的</p>
+<div class="image-box"><img src="/images/0001/tip-002-lang.png" alt="language"></div>
+<p>找这一项：<code>Configure Display language</code>，就是“配置显示语言”的意思，上下方向键选中它，然后回车。</p>
+<div class="image-box"><img src="/images/0001/tip-002-select.png" alt="language"></div>
+<p>就可以选择需要的语言了，<code>zh-cn</code> 就是中文。如果选项里没有，就选择最后一项，安装其他语言（可能是英文的，反正最后一项啦。</p>
+<p>这时候编辑器的左侧会像下图这样，列出所有可供安装的语言，我们当然选择 <code>Chinese (Simplified)</code> 就是简体中文啦。点击后面绿色的安装按钮，它会自动安装。</p>
+<div class="image-box"><img src="/images/0001/tip-002-more.png" alt="language"></div>
+<p>安装完毕之后，把编辑器关掉，重新打开。这时候就可以按这上面步骤选择中文啦。</p>
+
+  </div>
+  <nav id="article-nav">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        
+        <a class="page-link" href="/post-0001/" title="0001 五分钟从零到写网页？！">点此回到相关教程<span class="sr-only">点此回到相关教程</span></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="my-coffee">
+  <hr>
+  <h3 class="text-center">扫码解救小老鼠~</h3>
+  <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
+    <div>
+      <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/AliPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/QQPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+  </div>
+</div>
+  <div class="foot-tip">
+  <p>这只是一个培养兴趣，引导入门的启蒙读物，请不要太过较真。也请读者多多查阅 <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN Web 文档</a>，获得更权威的技术细节。</p>
+
+</div>
+</article>
+    </div>
+  </div>
+</div>
+    <footer class="text-center">
+      Copyright by 
+      <a href="https://dmnydn.com">代码能有多难？（https://dmnydn.com）</a> 2018 — 2020
+    </footer>
+  </body>
+</html>

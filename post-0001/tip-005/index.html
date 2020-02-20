@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+<link rel="stylesheet" href="/css/default-style.css">
+
+    <link rel="alternate" href="/atom.xml" title="代码能有多难？">
+    <title>Tip-005：网页模板初识 | 代码能有多难？</title>
+    <meta name="author" content="稻米鼠">
+    
+    <meta name="description" content="">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+    
+<script src="/js/popper.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/highlight.9.15.6.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('pre').each(function(){
+          const lang = $(this).find('code').first().attr('class').replace(/^.*(html|css|javsscript|js).*$/i, '$1').replace(/javascript/gi, 'js').toUpperCase()
+          $(this).attr('data-lang-name', lang)
+          // hljs.highlightBlock(this)
+        })
+        hljs.initHighlighting()
+        // add line num
+        $('pre > code').each(function(){
+          const codeArray = $(this).html().split('\n')
+          let result = ""
+          codeArray.forEach((code, lineNum) => {
+            if(code!=='' || lineNum !== codeArray.length-1){
+              result += '<div class="code-line" data-line-num="'+lineNum+'">'+code.replace(/(?<=^\s*?)( {2}|\t)/g, '<span class="one-tab"></span>')+'</div>'
+            }
+          })
+          $(this).html(result)
+        })
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128881873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128881873-1');
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="代码能有多难？" type="application/atom+xml">
+</head>
+  <body>
+<header class="container-fluid">
+  <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
+  <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
+    <small>
+        写给前端新人的故事书
+    </small>
+  </h1>
+  <nav class="nav justify-content-center">
+    
+      <!-- <a href="/" title="首页" class="nav-link">首页</a> -->
+      <a href="/" title="首页" class="nav-link">首页</a>
+    
+      <!-- <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a> -->
+      <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a>
+    
+      <!-- <a href="/about/" title="关于" class="nav-link">关于</a> -->
+      <a href="/about/" title="关于" class="nav-link">关于</a>
+    
+  </nav>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
+      <article id="post">
+  <h1 class="title">
+    Tip-005：网页模板初识
+  </h1>
+  <div class="post-content">
+    <p>生成的这一大段代码，是一个基础的 HTML 网页模板。注意：这是 <img src="/images/html5.png"><strong>HTML5</strong> 的基础模板哦~</p>
+<p>很简单的一段代码啦，不过我们刚刚接触，先不展开分析啦。就简单的解释一下我们修改的三个位置都是什么。</p>
+<h2 id="一、网页语言"><a href="#一、网页语言" class="headerlink" title="一、网页语言"></a>一、网页语言</h2><pre><code class="html">&lt;html lang=&quot;zh&quot;&gt;</code></pre>
+<p>这里的 <code>lang</code> 是在说这个网页的内容的主要语言是什么。内容哦，不是说代码。就是给人看的部分，不是给计算机看的内容。所以语言呢，就是中文啊（zh），英文啊（en）这种。目前知道这两个也就够用了的。想要强调是简体中文就写 <code>zh-CN</code>。<a href="#footnote-1" class="footnote-link"><sup>[1]</sup></a></p>
+<p>这个有什么用呢？对，告诉电脑，这个网页的语言是什么。浏览器会根据这个判断，这个页面是不是当前用户使用的语言，如果不是，那就弹出提示，问问是否需要进行翻译。当然还有其他用途啦，我就不一一举例了。</p>
+<div class="image-box"><img src="/images/0001/tip-005-translate.png" alt="翻译提示"></div>
+<h2 id="二、网页标题"><a href="#二、网页标题" class="headerlink" title="二、网页标题"></a>二、网页标题</h2><pre><code class="html">&lt;title&gt;这里是标题了啦~&lt;/title&gt;</code></pre>
+<p>这一部分中间的内容是网页的标题，用来显示在浏览器的标签上，就像这样：</p>
+<div class="image-box"><img src="/images/0001/tip-005-title.png" alt="翻译提示"></div>
+<p>用来告诉读者，当前页面是什么，当然，不宜过长哦~</p>
+<h2 id="三、网页内容"><a href="#三、网页内容" class="headerlink" title="三、网页内容"></a>三、网页内容</h2><pre><code class="html">&lt;body&gt;在这里是网页的内容哦~&lt;/body&gt;</code></pre>
+<p>这个内容就是网页中要显示的东西了，后面我们还会在这里放各种代码哦~</p>
+<h2 id="四、发现"><a href="#四、发现" class="headerlink" title="四、发现"></a>四、发现</h2><p>是不是觉得上面的代码好讲道理？比如 <code>title</code> 之间就是标题。<code>body</code> 之间就是内容（或者认为是网页的主体部分）。</p>
+<p>所以嘛，代码什么就是在描述想做什么了啦。标题是什么什么，主体是什么什么……这样。</p>
+<p>如果再观察一下，就发现还有:</p>
+<pre><code class="html">&lt;head&gt;
+  （这里内容省略……）
+&lt;/head&gt;</code></pre>
+<p>这是头？网页的“头”，是用来放那些不直接显示在页面之中的，对网页进行就解释说明的内容，就比如上面的 <code>title</code> 就放在这里面。</p>
+<div class="foot-notes"><p><strong id="footnote-1" class="footnote">>注释 1:</strong> 这些都是传统写法，和规范有出入。不过大家都这么写，大部分软件也都兼容，倒是规范写法好像很多地方还没兼容，或者别人不认识……所以先了解常用写法吧。</p></div>
+  </div>
+  <nav id="article-nav">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        
+        <a class="page-link" href="/post-0001/" title="0001 五分钟从零到写网页？！">点此回到相关教程<span class="sr-only">点此回到相关教程</span></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="my-coffee">
+  <hr>
+  <h3 class="text-center">扫码解救小老鼠~</h3>
+  <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
+    <div>
+      <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/AliPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/QQPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+  </div>
+</div>
+  <div class="foot-tip">
+  <p>这只是一个培养兴趣，引导入门的启蒙读物，请不要太过较真。也请读者多多查阅 <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN Web 文档</a>，获得更权威的技术细节。</p>
+
+</div>
+</article>
+    </div>
+  </div>
+</div>
+    <footer class="text-center">
+      Copyright by 
+      <a href="https://dmnydn.com">代码能有多难？（https://dmnydn.com）</a> 2018 — 2020
+    </footer>
+  </body>
+</html>
