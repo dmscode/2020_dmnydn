@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+<link rel="stylesheet" href="/css/default-style.css">
+
+    <link rel="alternate" href="/atom.xml" title="代码能有多难？">
+    <title>0004 出门 | 代码能有多难？</title>
+    <meta name="author" content="稻米鼠">
+    
+    <meta name="description" content="">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+    
+<script src="/js/popper.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/highlight.9.15.6.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('pre').each(function(){
+          const lang = $(this).find('code').first().attr('class').replace(/^.*(html|css|javsscript|js).*$/i, '$1').replace(/javascript/gi, 'js').toUpperCase()
+          $(this).attr('data-lang-name', lang)
+          // hljs.highlightBlock(this)
+        })
+        hljs.initHighlighting()
+        // add line num
+        $('pre > code').each(function(){
+          const codeArray = $(this).html().split('\n')
+          let result = ""
+          codeArray.forEach((code, lineNum) => {
+            if(code!=='' || lineNum !== codeArray.length-1){
+              result += '<div class="code-line" data-line-num="'+lineNum+'">'+code.replace(/(?<=^\s*?)( {2}|\t)/g, '<span class="one-tab"></span>')+'</div>'
+            }
+          })
+          $(this).html(result)
+        })
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128881873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128881873-1');
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="代码能有多难？" type="application/atom+xml">
+</head>
+  <body>
+<header class="container-fluid">
+  <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
+  <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
+    <small>
+        写给前端新人的晚安故事
+    </small>
+  </h1>
+  <nav class="nav justify-content-center">
+    
+      <!-- <a href="/" title="首页" class="nav-link">首页</a> -->
+      <a href="/" title="首页" class="nav-link">首页</a>
+    
+      <!-- <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a> -->
+      <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a>
+    
+      <!-- <a href="/about/" title="关于" class="nav-link">关于</a> -->
+      <a href="/about/" title="关于" class="nav-link">关于</a>
+    
+  </nav>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
+      <article id="post">
+  <h1 class="title">
+    0004 出门
+  </h1>
+  <div class="post-meta">
+    Author: 稻米鼠 | Write: 2020-05-07 | Update: 2020-05-07
+  </div>
+  
+  <div id="video">
+    <button class="toggle">展开/收起本篇视频</button>
+    <iframe src="https://player.bilibili.com/player.html?aid=285502297&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+  </div>
+  <script>
+    let videoFold = true
+    const videoIframeSize = ()=>{
+      const width = document.querySelector('#video').offsetWidth
+      document.querySelector('#video > iframe').height = width*0.75
+      document.querySelector('#video > iframe').style.marginBottom = videoFold ? -width*0.75+'px' : 0
+      document.querySelector('#video').style.height = videoFold ? document.querySelector('#video > .toggle').offsetHeight+'px' : document.querySelector('#video > .toggle').offsetHeight+width*0.75+'px'
+    }
+    videoIframeSize()
+    document.querySelector('#video > .toggle').addEventListener('click', ()=>{
+      videoFold = !videoFold
+      videoIframeSize()
+    })
+    window.addEventListener('resize', videoIframeSize)
+  </script>
+  
+  <div class="post-content">
+    <p>天气晴好，出门去玩儿。</p>
+<p>只是美中不足，孤零零的一个人。</p>
+<p>等宝宝成功了，一定要改变这种状态，不能一个人出门，怎么也得带上保镖。而且，要带就带两个保镖，一个在前面，举着大旗子，上面写着：“帅气可爱的稻米鼠过来了”；一个在后面举着大旗子，上面写着：“帅气可爱的稻米鼠过去了”。我就走在他俩当中，这状态，简直完美。这样走在大街上，只要认字的人，就都知道，我是那个帅气可爱的稻米鼠。你看这多好~</p>
+<p>你说什么？我的梦该醒了。</p>
+<p>才不会呢，小老鼠擦擦口水，翻了个身，继续做梦。</p>
+<p>带着家人一起出去玩，为了保证安全，这两个保镖依然是前面一个后面一个，当然旗子上的文字要改一改，“帅气可爱的稻米鼠带着家人过来了”。后面保镖旗子上的字，该怎么修改，聪明的你们应该都知道吧？</p>
+<p>但是出去玩儿嘛，免不了需要随身带着一些证件、票据、现金……出入各种地方都要出示这些东西，大家都有生活经验，我就不仔细的描述了。那像我这么大牌，自然不能自己去拿着这些东西。不过这里不是有两个保镖嘛，交给他们就好了呀。那你猜我是把这些东西交给前面那个保镖，还是交给后面那个保镖呢？</p>
+<p>显然，应该让前面的保镖拿着这些票据，去进行出示，然后我们在后面尾随，就一路畅通了。如果前面那个保镖什么都不拿，见到公交车噌的一下窜上去，然后说后面的人买票……那我就应该脱下来脚上的老北京布鞋，去追着抽他了。</p>
+<p>这么想想后边的保镖好轻松啊，除了打一个旗子，也没有什么其他的事情要做。要是有这么轻松的工作，小老鼠也想要。</p>
+<p>我知道你在吐槽啦，你说这两个保镖一点都不像保镖，倒好像是导游。我跟你说，那天我真的跟团出去旅游了呢，他们就是这个配置，前面一个导游拿着各种票据，然后带领着大家，最后面一个导游，避免有人掉队。可见我的设计方案是多么合理啊！我带着自己的两个保镖，走在旅游的队伍中，不禁这样想着。</p>
+<p>显然我们三个都属于这个旅游团，作为守规矩的好孩子，我们也都乖乖的走在这两个导游之间。我感觉我受到了双重的保护。这时候我要约束好自己的保镖，前面那个不能够超过最前面的导游，否则旅游景点跟咱们要门票，那就亏了；后面那个保镖不能超过最后边的导游，掉队了会被漂亮的导游小姐凶的。</p>
+<p>第 2 天早晨，我打算睡个懒觉，不过楼下煎饼果子的香味十分诱人，于是我打发保镖过去购买。这种小事情去两个保镖就没必要了，所以我让走在前面的那个保镖自己过去。你问我为什么是他过去？前面说了啊，我们的现金放在他身上呢，所以他过去最方便了。</p>
+<p>故事都听明白了吧，听明白了就睡觉吧，明天再给大家解释，这些东西和我们的代码有什么关系哦。</p>
+
+  </div>
+  
+  <nav id="article-nav">
+    <ul class="pagination justify-content-between">
+      <li class="page-item ">
+        <a class="page-link" href="/stories/3/" aria-label="Previous">
+          <span aria-hidden="true">&laquo; 上一章</span>
+          <span class="sr-only">上一章</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">Top ▲<span class="sr-only">返回顶部</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link" href="/none" aria-label="Next">
+          <span aria-hidden="true">下一章 &raquo;</span>
+          <span class="sr-only">下一章</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="my-coffee">
+  <hr>
+  <h3 class="text-center">扫码支持小老鼠~</h3>
+  <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
+    <div>
+      <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/AliPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/QQPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+  </div>
+</div>
+  <div class="foot-tip">
+  <p>这只是一个培养兴趣，引导入门的启蒙读物，请不要太过较真。也请读者多多查阅 <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN Web 文档</a>，获得更权威的技术细节。</p>
+
+</div>
+</article>
+    </div>
+  </div>
+</div>
+    <footer class="text-center">
+      Copyright by 
+      <a href="https://dmnydn.com">代码能有多难？（https://dmnydn.com）</a> 2018 — 2020
+    </footer>
+  </body>
+</html>

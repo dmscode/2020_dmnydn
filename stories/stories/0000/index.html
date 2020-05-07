@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+<link rel="stylesheet" href="/css/default-style.css">
+
+    <link rel="alternate" href="/atom.xml" title="代码能有多难？">
+    <title>0000 初见 | 代码能有多难？</title>
+    <meta name="author" content="稻米鼠">
+    
+    <meta name="description" content="">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+    
+<script src="/js/popper.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/highlight.9.15.6.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('pre').each(function(){
+          const lang = $(this).find('code').first().attr('class').replace(/^.*(html|css|javsscript|js).*$/i, '$1').replace(/javascript/gi, 'js').toUpperCase()
+          $(this).attr('data-lang-name', lang)
+          // hljs.highlightBlock(this)
+        })
+        hljs.initHighlighting()
+        // add line num
+        $('pre > code').each(function(){
+          const codeArray = $(this).html().split('\n')
+          let result = ""
+          codeArray.forEach((code, lineNum) => {
+            if(code!=='' || lineNum !== codeArray.length-1){
+              result += '<div class="code-line" data-line-num="'+lineNum+'">'+code.replace(/(?<=^\s*?)( {2}|\t)/g, '<span class="one-tab"></span>')+'</div>'
+            }
+          })
+          $(this).html(result)
+        })
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128881873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128881873-1');
+    </script>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="代码能有多难？" type="application/atom+xml">
+</head>
+  <body>
+<header class="container-fluid">
+  <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
+  <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
+    <small>
+        写给前端新人的晚安故事
+    </small>
+  </h1>
+  <nav class="nav justify-content-center">
+    
+      <!-- <a href="/" title="首页" class="nav-link">首页</a> -->
+      <a href="/" title="首页" class="nav-link">首页</a>
+    
+      <!-- <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a> -->
+      <a href="https://2019.dmnydn.com/" target="_blank" rel="noopener" title="旧版" class="nav-link">旧版</a>
+    
+      <!-- <a href="/about/" title="关于" class="nav-link">关于</a> -->
+      <a href="/about/" title="关于" class="nav-link">关于</a>
+    
+  </nav>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
+      <article id="post">
+  <h1 class="title">
+    0000 初见
+  </h1>
+  <div class="post-meta">
+    Author: 稻米鼠 | Write: 2020-05-06 | Update: 2020-05-06
+  </div>
+  
+  <div id="video">
+    <button class="toggle">展开/收起本篇视频</button>
+    <iframe src="https://player.bilibili.com/player.html?aid=840392434&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+  </div>
+  <script>
+    let videoFold = true
+    const videoIframeSize = ()=>{
+      const width = document.querySelector('#video').offsetWidth
+      document.querySelector('#video > iframe').height = width*0.75
+      document.querySelector('#video > iframe').style.marginBottom = videoFold ? -width*0.75+'px' : 0
+      document.querySelector('#video').style.height = videoFold ? document.querySelector('#video > .toggle').offsetHeight+'px' : document.querySelector('#video > .toggle').offsetHeight+width*0.75+'px'
+    }
+    videoIframeSize()
+    document.querySelector('#video > .toggle').addEventListener('click', ()=>{
+      videoFold = !videoFold
+      videoIframeSize()
+    })
+    window.addEventListener('resize', videoIframeSize)
+  </script>
+  
+  <div class="post-content">
+    <p>什么事情总要先给他一个开始，然后才会有往下的进行。</p>
+<p>于是我写下了这些内容，接下来就交给你们，去阅读它。</p>
+<p>我不喜欢一板一眼的教程，我知道你也不喜欢。那么这一次，让我们忘掉教程，忘掉学习，忘掉那些不愉快的事情，坐在壁炉前，平静而温暖的聊一聊天。</p>
+<p>天色暗了，世界安静了。</p>
+<p>刷手机虽然开心，但时间久了也会让人空虚。就不如听小老鼠讲个故事，然后带着笑意结束这一天。早睡早起还是很美好的，想想自己多久没有看到过日出了呢？</p>
+<p>好啦，我是在骗你的。</p>
+<p>故事确实是故事，但知识总是要有一些的。不过这样也好，或者你学到了知识，或者觉得厌倦，然后捕获了困意。怎么想都是赚到，所以为什么不试试呢？</p>
+
+  </div>
+  
+  <nav id="article-nav">
+    <ul class="pagination justify-content-between">
+      <li class="page-item disabled">
+        <a class="page-link" href="/none" aria-label="Previous">
+          <span aria-hidden="true">&laquo; 上一章</span>
+          <span class="sr-only">上一章</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">Top ▲<span class="sr-only">返回顶部</span></a>
+      </li>
+      <li class="page-item ">
+        <a class="page-link" href="/stories/1/" aria-label="Next">
+          <span aria-hidden="true">下一章 &raquo;</span>
+          <span class="sr-only">下一章</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="my-coffee">
+  <hr>
+  <h3 class="text-center">扫码支持小老鼠~</h3>
+  <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
+    <div>
+      <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/AliPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+    <div>
+      <img src="/images/QQPay-360.png" alt="扫描二维码请老鼠喝咖啡~">
+    </div>
+  </div>
+</div>
+  <div class="foot-tip">
+  <p>这只是一个培养兴趣，引导入门的启蒙读物，请不要太过较真。也请读者多多查阅 <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN Web 文档</a>，获得更权威的技术细节。</p>
+
+</div>
+</article>
+    </div>
+  </div>
+</div>
+    <footer class="text-center">
+      Copyright by 
+      <a href="https://dmnydn.com">代码能有多难？（https://dmnydn.com）</a> 2018 — 2020
+    </footer>
+  </body>
+</html>

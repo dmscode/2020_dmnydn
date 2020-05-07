@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/css/default-style.css">
 
     <link rel="alternate" href="/atom.xml" title="代码能有多难？">
-    <title>Tip-003：编程语言是个啥 | 代码能有多难？</title>
+    <title>0002 直面 | 代码能有多难？</title>
     <meta name="author" content="稻米鼠">
     
     <meta name="description" content="">
@@ -66,7 +66,7 @@
   <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
   <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
     <small>
-        写给前端新人的故事书
+        写给前端新人的晚安故事
     </small>
   </h1>
   <nav class="nav justify-content-center">
@@ -87,38 +87,68 @@
     <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
       <article id="post">
   <h1 class="title">
-    Tip-003：编程语言是个啥
+    0002 直面
   </h1>
+  <div class="post-meta">
+    Author: 稻米鼠 | Write: 2020-05-07 | Update: 2020-05-07
+  </div>
+  
+  <div id="video">
+    <button class="toggle">展开/收起本篇视频</button>
+    <iframe src="https://player.bilibili.com/player.html?aid=840546684&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+  </div>
+  <script>
+    let videoFold = true
+    const videoIframeSize = ()=>{
+      const width = document.querySelector('#video').offsetWidth
+      document.querySelector('#video > iframe').height = width*0.75
+      document.querySelector('#video > iframe').style.marginBottom = videoFold ? -width*0.75+'px' : 0
+      document.querySelector('#video').style.height = videoFold ? document.querySelector('#video > .toggle').offsetHeight+'px' : document.querySelector('#video > .toggle').offsetHeight+width*0.75+'px'
+    }
+    videoIframeSize()
+    document.querySelector('#video > .toggle').addEventListener('click', ()=>{
+      videoFold = !videoFold
+      videoIframeSize()
+    })
+    window.addEventListener('resize', videoIframeSize)
+  </script>
+  
   <div class="post-content">
-    <h2 id="一、是什么"><a href="#一、是什么" class="headerlink" title="一、是什么"></a>一、是什么</h2><p>编程语言就是我们和计算机交流的一个媒介。就像我们现在使用汉语进行交流一样。</p>
-<p>世界上有许多种语言，我们当前交流的很顺畅，是因为我们都知道当前的交流语言是汉语。就没有误会。如果我说着汉语，而你当作英文去理解，这就出岔子了。这很空耳。</p>
-<p>和计算机交流也是同样的，编程语言有很多种，我们要先和计算机约定好，用哪一种语言进行交流，才不会产生误会。约定的方式一般是文件的后缀。</p>
-<p>而在 <a href="/post-0001/" title="0001 五分钟从零到写网页？！">0001 五分钟从零到写网页？！</a> 里面，因为我们新建文件以后，还没有保存，就没有后缀。所以通过编辑器右下角进行选择的方式，直接指定当前使用的编程语言是什么。</p>
-<h2 id="二、有啥用"><a href="#二、有啥用" class="headerlink" title="二、有啥用"></a>二、有啥用</h2><p>当我们写的代码运行的时候，才是真正的和计算机交流的时刻。在代码中，我们写出了希望让计算机做什么，然后计算机按照设定进行了相应的操作。这是很令人兴奋的。就像小时候通过遥控器发出指令，看着遥控汽车被自己操控一样的开心。</p>
-<p>在写代码的时候，只是在记录我们的想法，还没有真的让计算机去执行，这时候着急设置编程语言是为什么呢？</p>
-<p>这个问题就好像：我在写这篇内容的时候，用什么语言都可以啦，只要在交给读者的时候，和读者之间达成默契，大家按着我使用的语言去解读，不产生误会就 OK 啊。</p>
-<p>道理确实是如此的，所以这些内容我们用 Windows 自带的记事本去写也是没差的。只是记事本不好用啦。</p>
-<p>好用的编辑器就像一个管家，知道主人要出门，自然的帮我们准备衣物，我们走到门口，帽子就递到了手上。诶，是很省心的赶脚！</p>
-<p>大家也发现了，我们的第一个网页写的很省心，这都是编辑器的功劳啦。</p>
-<p>而前提是：编辑器也需要知道当前写的是什么语言，才能打好辅助哦。主人明明要出门，管家不知道，还以为是去洗澡，这就乱套了不是。</p>
-<p>所以我们设置编程语言首先是告诉编辑器的。</p>
-<h2 id="三、辅助啥"><a href="#三、辅助啥" class="headerlink" title="三、辅助啥"></a>三、辅助啥</h2><p>这个辅助都能做啥呢？</p>
-<p>首先，当主人伸手的时候，知道该递给帽子还是浴巾。当我们写代码的时候，知道该给我们怎样的提示，这个我们马上会讲（参见：<a href="/post-0001/tip-004/" title="Tip-004：代码提示和自动完成" class="tip-link" target="_blank">Tip-004：代码提示和自动完成</a>）。</p>
-<p>然后，是更好的显示代码。你看这个代码花花绿绿，看着不枯燥，其实这些颜色都是有用意的，反正，就是为了让我们更方便阅读。这叫做“代码高亮”。编辑器要知道当前写的是什么语言，才能进行正确的代码高亮。如果你的代码没有高亮，那就先检查是不是语言没有设置哦~</p>
-<p>还有，我们保存文件的时候，编辑器会自动地设置合适的后缀。而后缀，是计算机识别这个文件是什么语言的重要依据。换句话说，下次打开这个文件，电脑就知道这是什么语言啦。</p>
+    <p>我们要讲的是关于什么的内容呢？前端，这个词范围太广了，很多行业里都会用到。这一次是针对网站的，那么网站里的前端就是网页，我们作为读者看到的那些部分。</p>
+<p>你是不是觉得无趣了呀？这也挺正常的，以前的前端就是一个比较无趣的工作嘛。</p>
+<p>从前呢，有一个饭店。小老鼠是里面跑堂的，负责接待每一位顾客，问问他们想吃什么？想喝什么？有什么需求，然后屁颠儿屁颠儿的跑回后厨，去告诉大师傅该做怎样的菜，等菜做好了，再端出来，送到顾客的桌上，然后说一句：您慢用~</p>
+<p>这样直面顾客的就是前端，那个直面灶台的大师傅就是后端。</p>
+<p>这是一份枯燥乏味的工作，后来小老鼠就跑出去单飞了。说人话就是……人家不要我，我就去街口摆煎饼果子摊儿了。这个技术要求就非常的低，虽然老鼠的煎饼做的很一般，但是小老鼠接待顾客的能力很强啊，摊子搞得也很漂亮，煎饼做出来也很漂亮，然后我笑脸迎人，跟谁都多聊两句，大家觉得开心，我的生意就也不错。</p>
+<p>你看我还是在直面顾客，所以还是前端，但是多了一些技能，于是一个人把这个买卖给挑起来了。这就是现在的前端，不是特别复杂的事情，他自己就能做。所以现在的前端一副风生水起，到处抢人饭碗的样子。你也永远都猜不透，这些小摊里能做出怎样有趣的东西。</p>
+<p>前端能做的多了，后端是不是就完蛋了？也没有啊，那个大厨现在专心做饭，然后并不接待顾客，但他可以做外卖啊。于是又是一个风生水起的故事。</p>
+<p>当然了，上面这些都是小打小闹的。真正五星级的大饭店，前端后端必须齐备，要不然肯定是乱套的。</p>
+<p>哎呀，不小心在晚安故事里聊了这些东西，要不我们一起爬起来去做一份泡面吧~（听我的故事还能长肉肉，是不是觉得赚了？（（吐舌头</p>
 
   </div>
+  
   <nav id="article-nav">
-    <ul class="pagination justify-content-center">
+    <ul class="pagination justify-content-between">
+      <li class="page-item ">
+        <a class="page-link" href="/stories/1/" aria-label="Previous">
+          <span aria-hidden="true">&laquo; 上一章</span>
+          <span class="sr-only">上一章</span>
+        </a>
+      </li>
       <li class="page-item">
-        
-        <a class="page-link" href="/post-0001/" title="0001 五分钟从零到写网页？！">点此回到相关教程<span class="sr-only">点此回到相关教程</span></a>
+        <a class="page-link" href="#">Top ▲<span class="sr-only">返回顶部</span></a>
+      </li>
+      <li class="page-item ">
+        <a class="page-link" href="/stories/3/" aria-label="Next">
+          <span aria-hidden="true">下一章 &raquo;</span>
+          <span class="sr-only">下一章</span>
+        </a>
       </li>
     </ul>
   </nav>
+
   <div id="my-coffee">
   <hr>
-  <h3 class="text-center">扫码解救小老鼠~</h3>
+  <h3 class="text-center">扫码支持小老鼠~</h3>
   <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
     <div>
       <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">

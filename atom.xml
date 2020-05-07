@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>代码能有多难？</title>
   
-  <subtitle>写给前端新人的故事书</subtitle>
+  <subtitle>写给前端新人的晚安故事</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dmnydn.com/"/>
-  <updated>2019-07-26T00:08:15.991Z</updated>
+  <updated>2020-05-06T11:54:48.647Z</updated>
   <id>https://dmnydn.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World!</title>
-    <link href="https://dmnydn.com/hello-world/"/>
-    <id>https://dmnydn.com/hello-world/</id>
-    <published>2019-07-09T23:47:20.000Z</published>
-    <updated>2019-07-26T00:08:15.991Z</updated>
+    <title>0000 初见</title>
+    <link href="https://dmnydn.com/stories/stories/0000/"/>
+    <id>https://dmnydn.com/stories/stories/0000/</id>
+    <published>2020-05-06T11:51:55.000Z</published>
+    <updated>2020-05-06T11:54:48.647Z</updated>
     
     <summary type="html">
     
@@ -29,25 +29,26 @@
       
         
         
-          &lt;p&gt;代码写多了，最开始一定要 “Hello world！” 一下才觉得踏实。&lt;/p&gt;
-&lt;p&gt;大家好，我是&lt;strong&gt;稻米鼠&lt;/strong&gt;。对，就是那个给大家讲前端，最近人气凉凉的小老鼠。（BGM
+          &lt;p&gt;什么事情总要先给他一个开始，然后才会有往下的进行。&lt;/p&gt;
+&lt;p&gt;于是我写下了这些内容，接下来就交给你们，去阅读它。&lt;/p&gt;
+&lt;p&gt;我不喜欢一板一眼的教程，我知道你也不喜欢。那么这一次，让我们忘掉教程，忘掉学习，忘掉那些不愉快的事情，坐在壁炉前，平静而温暖的聊一聊天。&lt;/p
         
       
     
     </summary>
     
     
-      <category term="courses" scheme="https://dmnydn.com/categories/courses/"/>
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
     
     
   </entry>
   
   <entry>
-    <title>0001 五分钟从零到写网页？！</title>
-    <link href="https://dmnydn.com/post-0001/"/>
-    <id>https://dmnydn.com/post-0001/</id>
-    <published>2019-07-18T06:29:08.000Z</published>
-    <updated>2019-07-30T06:11:42.575Z</updated>
+    <title>0001 何以</title>
+    <link href="https://dmnydn.com/stories/1/"/>
+    <id>https://dmnydn.com/stories/1/</id>
+    <published>2020-05-07T00:18:27.000Z</published>
+    <updated>2020-05-07T00:21:53.590Z</updated>
     
     <summary type="html">
     
@@ -55,26 +56,25 @@
       
         
         
-          &lt;div class=&quot;chat left&quot;&gt;
-        &lt;div class=&quot;chat-logo&quot; data-author=&quot;喵小白&quot;&gt;&lt;/div&gt;
-        &lt;div
+          &lt;p&gt;我们为什么要学习？这简直就是一个哲学问题，可是总有人喜欢拿这么深奥的问题来拷问小老鼠。&lt;/p&gt;
+&lt;p&gt;学习这件事情不是与生俱来的吗？学会了睁开眼睛打量世界，学会了翻身，学会了爬行，又学会了直立行走……每一件事情都是我们成长的见证，我们依旧在成长，当然依旧要学习。不要停下来感
         
       
     
     </summary>
     
     
-      <category term="courses" scheme="https://dmnydn.com/categories/courses/"/>
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
     
     
   </entry>
   
   <entry>
-    <title>Tip-001：Visual Studio Code</title>
-    <link href="https://dmnydn.com/post-0001/tip-001/"/>
-    <id>https://dmnydn.com/post-0001/tip-001/</id>
-    <published>2019-07-18T06:29:08.000Z</published>
-    <updated>2019-07-30T06:13:02.399Z</updated>
+    <title>0002 直面</title>
+    <link href="https://dmnydn.com/stories/2/"/>
+    <id>https://dmnydn.com/stories/2/</id>
+    <published>2020-05-07T00:43:19.000Z</published>
+    <updated>2020-05-07T00:53:22.185Z</updated>
     
     <summary type="html">
     
@@ -82,25 +82,26 @@
       
         
         
-          &lt;p&gt;Visual Studio Code 是微软开发的一款跨平台编辑器，自带了许多实用的功能，开箱即用，支持代码提示和补全，天生前端友好。非常适合作为前端入门的第一款编辑器。&lt;/p&gt;
-&lt;p&gt;请注意一定在官方网址（&lt;a
+          &lt;p&gt;我们要讲的是关于什么的内容呢？前端，这个词范围太广了，很多行业里都会用到。这一次是针对网站的，那么网站里的前端就是网页，我们作为读者看到的那些部分。&lt;/p&gt;
+&lt;p&gt;你是不是觉得无趣了呀？这也挺正常的，以前的前端就是一个比较无趣的工作嘛。&lt;/p&gt;
+&lt;p&gt;从前呢，有一个饭店。小
         
       
     
     </summary>
     
     
-      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
     
     
   </entry>
   
   <entry>
-    <title>Tip-002：设置 VS Code 的显示语言</title>
-    <link href="https://dmnydn.com/post-0001/tip-002/"/>
-    <id>https://dmnydn.com/post-0001/tip-002/</id>
-    <published>2019-07-18T06:29:08.000Z</published>
-    <updated>2019-07-30T06:15:48.293Z</updated>
+    <title>0003 三分</title>
+    <link href="https://dmnydn.com/stories/3/"/>
+    <id>https://dmnydn.com/stories/3/</id>
+    <published>2020-05-07T00:43:38.000Z</published>
+    <updated>2020-05-07T00:45:51.471Z</updated>
     
     <summary type="html">
     
@@ -108,26 +109,26 @@
       
         
         
-          &lt;p&gt;在前期的使用过程中，其实英文真的不会造成多大影响，因为菜单什么的，基本不用去看，所以显示语言并不需要修改。&lt;/p&gt;
-&lt;p&gt;如果想要修改，也很简单，只是可能和我们日常设置软件的操作不太一样而已。&lt;/p&gt;
-&lt;p&gt;首先打开编辑器，然后按下快捷键 &lt;kbd&gt;F1&lt;/kbd&gt; 或者
+          &lt;p&gt;前端学点啥呢，就是写网页了啦~&lt;/p&gt;
+&lt;p&gt;这样说也没什么错，不过很不完全。怎么会只写网页呢，像我这么懒惰的小老鼠，最常干的事情是把别人的网页改得符合自己的使用习惯。这就好像会讲很有趣的故事，并不一定都要说相声，在自己无聊的时候，讲给自己开心也是蛮不错的。&lt;/p&gt;
+&lt;p&gt;
         
       
     
     </summary>
     
     
-      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
     
     
   </entry>
   
   <entry>
-    <title>Tip-003：编程语言是个啥</title>
-    <link href="https://dmnydn.com/post-0001/tip-003/"/>
-    <id>https://dmnydn.com/post-0001/tip-003/</id>
-    <published>2019-07-28T10:27:44.000Z</published>
-    <updated>2019-07-30T06:20:08.237Z</updated>
+    <title>0004 出门</title>
+    <link href="https://dmnydn.com/stories/4/"/>
+    <id>https://dmnydn.com/stories/4/</id>
+    <published>2020-05-07T00:44:12.000Z</published>
+    <updated>2020-05-07T01:00:41.505Z</updated>
     
     <summary type="html">
     
@@ -135,64 +136,16 @@
       
         
         
-          &lt;h2 id=&quot;一、是什么&quot;&gt;&lt;a href=&quot;#一、是什么&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;天气晴好，出门去玩儿。&lt;/p&gt;
+&lt;p&gt;只是美中不足，孤零零的一个人。&lt;/p&gt;
+&lt;p&gt;等宝宝成功了，一定要改变这种状态，不能一个人出门，怎么也得带上保镖。而且，要带就带两个保镖，一个在前面，举着大旗子，上面写着：“帅气可爱的稻米鼠过来了”；一个在后面举着大旗子，上面写着：“帅
         
       
     
     </summary>
     
     
-      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tip-004：代码提示和自动完成</title>
-    <link href="https://dmnydn.com/post-0001/tip-004/"/>
-    <id>https://dmnydn.com/post-0001/tip-004/</id>
-    <published>2019-07-29T23:48:01.000Z</published>
-    <updated>2019-07-30T06:23:18.928Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、提示和补全&quot;&gt;&lt;a href=&quot;#一、提示和补全&quot; class=&quot;headerlink&quot; title=&quot;一、提示和补全&quot;&gt;&lt;/a&gt;一、提示和补全&lt;/h2&gt;&lt;p&gt;一个感叹号，一个
-        
-      
-    
-    </summary>
-    
-    
-      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tip-005：网页模板初识</title>
-    <link href="https://dmnydn.com/post-0001/tip-005/"/>
-    <id>https://dmnydn.com/post-0001/tip-005/</id>
-    <published>2019-07-30T00:25:31.000Z</published>
-    <updated>2019-07-30T06:27:46.706Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;生成的这一大段代码，是一个基础的 HTML 网页模板。注意：这是 &lt;img src=&quot;/images/html5.png&quot;&gt;&lt;strong&gt;HTML5&lt;/strong&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="tip" scheme="https://dmnydn.com/categories/tip/"/>
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
     
     
   </entry>

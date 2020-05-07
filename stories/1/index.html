@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/css/default-style.css">
 
     <link rel="alternate" href="/atom.xml" title="代码能有多难？">
-    <title>Tip-001：Visual Studio Code | 代码能有多难？</title>
+    <title>0001 何以 | 代码能有多难？</title>
     <meta name="author" content="稻米鼠">
     
     <meta name="description" content="">
@@ -66,7 +66,7 @@
   <div class="header-bg" style="background-image: url('/images/header.jpg')"></div>
   <h1><a href="/" title="代码能有多难？">代码能有多难？</a><br>
     <small>
-        写给前端新人的故事书
+        写给前端新人的晚安故事
     </small>
   </h1>
   <nav class="nav justify-content-center">
@@ -87,24 +87,66 @@
     <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
       <article id="post">
   <h1 class="title">
-    Tip-001：Visual Studio Code
+    0001 何以
   </h1>
+  <div class="post-meta">
+    Author: 稻米鼠 | Write: 2020-05-07 | Update: 2020-05-07
+  </div>
+  
+  <div id="video">
+    <button class="toggle">展开/收起本篇视频</button>
+    <iframe src="https://player.bilibili.com/player.html?aid=582922320&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+  </div>
+  <script>
+    let videoFold = true
+    const videoIframeSize = ()=>{
+      const width = document.querySelector('#video').offsetWidth
+      document.querySelector('#video > iframe').height = width*0.75
+      document.querySelector('#video > iframe').style.marginBottom = videoFold ? -width*0.75+'px' : 0
+      document.querySelector('#video').style.height = videoFold ? document.querySelector('#video > .toggle').offsetHeight+'px' : document.querySelector('#video > .toggle').offsetHeight+width*0.75+'px'
+    }
+    videoIframeSize()
+    document.querySelector('#video > .toggle').addEventListener('click', ()=>{
+      videoFold = !videoFold
+      videoIframeSize()
+    })
+    window.addEventListener('resize', videoIframeSize)
+  </script>
+  
   <div class="post-content">
-    <p>Visual Studio Code 是微软开发的一款跨平台编辑器，自带了许多实用的功能，开箱即用，支持代码提示和补全，天生前端友好。非常适合作为前端入门的第一款编辑器。</p>
-<p>请注意一定在官方网址（<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a>）下载，这样才能获得最新的稳定版本，而且无捆绑，不流氓，一路下一步，安心的无脑安装即可。</p>
+    <p>我们为什么要学习？这简直就是一个哲学问题，可是总有人喜欢拿这么深奥的问题来拷问小老鼠。</p>
+<p>学习这件事情不是与生俱来的吗？学会了睁开眼睛打量世界，学会了翻身，学会了爬行，又学会了直立行走……每一件事情都是我们成长的见证，我们依旧在成长，当然依旧要学习。不要停下来感慨啊，因为一旦停下来，最容易感慨的事情，就是发现自己变老了。</p>
+<p>好不好学和学会了有什么用？你问我，我又怎么知道呢。</p>
+<p>好不好学这是一个很主观的事情，它因人而异，所以对于你是不是一件容易的事，总要亲自尝试一下才会知道。</p>
+<p>学会了有什么用？就看运气喽，有多少人毕业之后干的就是自己专业所对口的工作呢？家里的创可贴用不上，不也是一件很值得开心的事情嘛。但是创可贴还是要准备一点的，万一需要就有备无患哦。</p>
+<p>而且啊，也不一定非得是有伤口的时候才需要创可贴，鞋子磨脚了也能用它哦。那你现在问我创可贴买了以后会用在哪里？笨笨的小老鼠又怎么能够猜得出呢？</p>
+<p>不去讲那些大道理，因为好多人讲过，也因为很枯燥，我不喜欢。其实怎么讲对于没有接触过的人都是模糊的。而且还有许多主观的方面，许多自己独特的情况，又怎么能够凭借别人的三言两语去进行判断呢？就不如自己去尝试一下，鞋子合不合脚，只有真正穿过才知道。</p>
 
   </div>
+  
   <nav id="article-nav">
-    <ul class="pagination justify-content-center">
+    <ul class="pagination justify-content-between">
+      <li class="page-item ">
+        <a class="page-link" href="/stories/stories/0000/" aria-label="Previous">
+          <span aria-hidden="true">&laquo; 上一章</span>
+          <span class="sr-only">上一章</span>
+        </a>
+      </li>
       <li class="page-item">
-        
-        <a class="page-link" href="/post-0001/" title="0001 五分钟从零到写网页？！">点此回到相关教程<span class="sr-only">点此回到相关教程</span></a>
+        <a class="page-link" href="#">Top ▲<span class="sr-only">返回顶部</span></a>
+      </li>
+      <li class="page-item ">
+        <a class="page-link" href="/stories/2/" aria-label="Next">
+          <span aria-hidden="true">下一章 &raquo;</span>
+          <span class="sr-only">下一章</span>
+        </a>
       </li>
     </ul>
   </nav>
+
   <div id="my-coffee">
   <hr>
-  <h3 class="text-center">扫码解救小老鼠~</h3>
+  <h3 class="text-center">扫码支持小老鼠~</h3>
   <div id="paymethod" class="image-box" style="width: 100%; margin-left: 0; margin-right: 0;">
     <div>
       <img src="/images/WePay-360.png" alt="扫描二维码请老鼠喝咖啡~">
