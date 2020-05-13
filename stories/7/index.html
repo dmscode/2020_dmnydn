@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/css/default-style.css">
 
     <link rel="alternate" href="/atom.xml" title="代码能有多难？">
-    <title>0005 如此 | 代码能有多难？</title>
+    <title>0007 新建 | 代码能有多难？</title>
     <meta name="author" content="稻米鼠">
     
     <meta name="description" content="">
@@ -87,15 +87,15 @@
     <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
       <article id="post">
   <h1 class="title">
-    0005 如此
+    0007 新建
   </h1>
   <div class="post-meta">
-    Author: 稻米鼠 | Write: 2020-05-07 | Update: 2020-05-07
+    Author: 稻米鼠 | Write: 2020-05-13 | Update: 2020-05-13
   </div>
   
   <div id="video">
     <button class="toggle">展开/收起本篇视频</button>
-    <iframe src="https://player.bilibili.com/player.html?aid=455505858&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+    <iframe src="https://player.bilibili.com/player.html?aid=285659547&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
   </div>
   <script>
     let videoFold = true
@@ -114,25 +114,24 @@
   </script>
   
   <div class="post-content">
-    <p>昨天的故事大家都记住了吗？没有记住的可以再去看一遍（然后就又被我哄睡着了呢~</p>
-<p>如果你觉得云里雾里，那么没关系，因为现在我就要给你们解释一下了。</p>
-<p>这里有一个内容，就比如是我。但是你们怎么能知道这个人就是稻米鼠呢？所以前面一个保镖，后面一个保镖，举着旗子来标记一下，中间这个货，就是稻米鼠。这一下就清晰了，事情就简单明了了。</p>
-<p>这个方法很简单吧，HTML 就是这个样子的。你看你只要读懂了昨天的小故事，就已经掌握了其中的核心理论了呢~</p>
-<blockquote>
-<p>【从这里开始加粗呦】这些文字将会被加粗【到这里加粗结束哦】</p>
-</blockquote>
-<p>像上面这样对内容进行标记，多简单的一件事情啊。只是有一个小问题，就是这样写太复杂了，所以把事情稍微简化一下：</p>
-<pre><code class="html">&lt;strong&gt;这些文字将会被加粗&lt;/strong&gt;</code></pre>
-<p>这里和上面表达的是相同的意思，稍加对照你也就可以很好的理解了。于是，你学会了书写第 1 句代码。</p>
-<p>那么问题来了，道理我们都懂，但是我们怎么去使用呢？</p>
-<p>只需要打开一个记事本，把上面的内容粘贴进去，然后另存为 <code>index.html</code> ，再将文件拖到浏览器里，就可以查看我们的成果了。那么快享受我们第 1 次的成就感吧~</p>
+    <p>现在拥有了像小老鼠一样帅气的编辑器，让我们开始吧。</p>
+<p>和几乎一切软件一样，我们可以按 <code>Ctrl+N</code> 来新建一个空白文件。如果你打开软件的时候，就已经有了一个空白文件，那么这一步也省了。</p>
+<p>如果你打开软件的时候看到的是这样的界面，</p>
+<div class="image-box"><img src="/images/0007/1.png" alt=""></div>
+<p>你会发现他给出了一些常用快捷键的提示，虽然除了第 1 个，其他的我们还用不上。别管他们，只要在空白的位置双击鼠标，也可以很方便的新建一个文档。</p>
+<p>作为可爱的萌新，不需要关注太多，先注意两个关键的细节就好。在文件新建之后，注意看编辑器的右下角，会有一系列的提示。</p>
+<div class="image-box"><img src="/images/0007/2.png" alt=""></div>
+<p>UTF-8 是说我们当前文档的编码，现在先不用理解它是什么，只要保证这里确实是 UTF-8，并且后面的操作都按照我说的去进行，你就不会遇到奇奇怪怪的乱码问题。不过一般情况下，我们新建的文件，自然就是这个编码，所以现在只是介绍你们相互认识一下，实际到后面几乎并不需要为它而费心。</p>
+<p>还有就是后面那个纯文本，这个位置说的是当前文档是怎样的一种格式。因为我们刚刚新建的是一个空白的文档，所以他认为我们的内容就是纯粹的文本内容。我们可以通过点击这里，来指定其他的格式，这样编辑器就知道应该如何给我们打辅助了。</p>
+<div class="image-box"><img src="/images/0007/3.png" alt=""></div>
+<p>编辑器对文件格式的识别有两种方式，第 1 种就是像刚才这样，手动为当前文档指定它所属的格式。第 2 种则是通过文件的扩展名，就是文件名字最后一个点（<code>.</code>）后面的内容。比如：<code>index.html</code> 就是一个 HTML 格式的网页文件。所以我们还可以通过，在保存文件时指定对应的扩展名，来设定文件的具体格式。而编辑器在打开一个文件的时候，也会通过它的扩展名来识别这个文件的格式。</p>
 
   </div>
   
   <nav id="article-nav">
     <ul class="pagination justify-content-between">
       <li class="page-item ">
-        <a class="page-link" href="/stories/4/" aria-label="Previous">
+        <a class="page-link" href="/stories/6/" aria-label="Previous">
           <span aria-hidden="true">&laquo; 上一章</span>
           <span class="sr-only">上一章</span>
         </a>
@@ -140,8 +139,8 @@
       <li class="page-item">
         <a class="page-link" href="#">Top ▲<span class="sr-only">返回顶部</span></a>
       </li>
-      <li class="page-item ">
-        <a class="page-link" href="/stories/6/" aria-label="Next">
+      <li class="page-item disabled">
+        <a class="page-link" href="/none" aria-label="Next">
           <span aria-hidden="true">下一章 &raquo;</span>
           <span class="sr-only">下一章</span>
         </a>

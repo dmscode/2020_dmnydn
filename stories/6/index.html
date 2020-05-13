@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/css/default-style.css">
 
     <link rel="alternate" href="/atom.xml" title="代码能有多难？">
-    <title>0005 如此 | 代码能有多难？</title>
+    <title>0006 工具 | 代码能有多难？</title>
     <meta name="author" content="稻米鼠">
     
     <meta name="description" content="">
@@ -87,15 +87,15 @@
     <div id="content" class="col col-xs-12 col-sm-12 col-md-10 col-lg-8">
       <article id="post">
   <h1 class="title">
-    0005 如此
+    0006 工具
   </h1>
   <div class="post-meta">
-    Author: 稻米鼠 | Write: 2020-05-07 | Update: 2020-05-07
+    Author: 稻米鼠 | Write: 2020-05-13 | Update: 2020-05-13
   </div>
   
   <div id="video">
     <button class="toggle">展开/收起本篇视频</button>
-    <iframe src="https://player.bilibili.com/player.html?aid=455505858&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
+    <iframe src="https://player.bilibili.com/player.html?aid=413050419&amp;page=1&amp;as_wide=1" frameborder="0" width="100%" height="0" allowfullscreen="true" seamless="seamless" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"></iframe>
   </div>
   <script>
     let videoFold = true
@@ -114,25 +114,44 @@
   </script>
   
   <div class="post-content">
-    <p>昨天的故事大家都记住了吗？没有记住的可以再去看一遍（然后就又被我哄睡着了呢~</p>
-<p>如果你觉得云里雾里，那么没关系，因为现在我就要给你们解释一下了。</p>
-<p>这里有一个内容，就比如是我。但是你们怎么能知道这个人就是稻米鼠呢？所以前面一个保镖，后面一个保镖，举着旗子来标记一下，中间这个货，就是稻米鼠。这一下就清晰了，事情就简单明了了。</p>
-<p>这个方法很简单吧，HTML 就是这个样子的。你看你只要读懂了昨天的小故事，就已经掌握了其中的核心理论了呢~</p>
-<blockquote>
-<p>【从这里开始加粗呦】这些文字将会被加粗【到这里加粗结束哦】</p>
-</blockquote>
-<p>像上面这样对内容进行标记，多简单的一件事情啊。只是有一个小问题，就是这样写太复杂了，所以把事情稍微简化一下：</p>
-<pre><code class="html">&lt;strong&gt;这些文字将会被加粗&lt;/strong&gt;</code></pre>
-<p>这里和上面表达的是相同的意思，稍加对照你也就可以很好的理解了。于是，你学会了书写第 1 句代码。</p>
-<p>那么问题来了，道理我们都懂，但是我们怎么去使用呢？</p>
-<p>只需要打开一个记事本，把上面的内容粘贴进去，然后另存为 <code>index.html</code> ，再将文件拖到浏览器里，就可以查看我们的成果了。那么快享受我们第 1 次的成就感吧~</p>
+    <p>写代码这件事情，说起来总有那么点儿极客。如果用记事本去写，就丢掉了这种范儿，所以我们来装一个工具吧。</p>
+<p>VSCode（ <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a> ），下载软件一定要到他的官网去哦。虽然是英文的，但其实只要点击那个大大的蓝色按钮就可以了，一般下载下来的就是自己对应系统的安装文件。</p>
+<p>这是微软出品的一个编辑器，用来编辑文字的。对，就是在里面打字写东西，然后界面又看起来酷酷的，用起来其实还蛮简单。</p>
+<p>安装的时候如果看不懂，就去点下一步（next）好了，像这种大厂出品的软件，一点都不流氓，也不会有捆绑，放心去安装，没有任何问题的。</p>
+<p>安装以后就可以直接使用了，虽然界面是英文的，但其实也没有多大影响。</p>
+<p>如果想要安装中文语言包，也不麻烦，只是描述起来可能显得稍微复杂。</p>
+<ul>
+<li><p>首先我们当然要打开编辑器，就是刚刚安装的 VSCode；</p>
+</li>
+<li><p>然后按一下 <code>F1</code> 或者 <code>Ctrl+Shift+P</code>，这时候注意观察，在编辑器的上面，中间的位置，会显示出一条输入框，用来输入命令，操作编辑器；</p>
+</li>
+<li><p>输入 <code>lang</code> ，应该就可以看到这样一个选项 <code>Configure Display Language</code>，那么选中他，回车；</p>
+<div class="image-box"><img src="/images/0006/1.png" alt=""></div>
+</li>
+<li><p>这时候就会有相应的语言可供我们选择，<code>en</code> 表示英文，<code>zh-cn</code> 表示中文简体，选择我们需要的那种语言就可以了；</p>
+</li>
+<li><p>如果选单中没有我们所需要的那种语言，那么看最后一项那串长长的文字 <code>Install additional languages</code>，选择它，就可以进入扩展管理安装更多的语言包；</p>
+<div class="image-box"><img src="/images/0006/2.png" alt=""></div>
+</li>
+<li><p>在扩展管理上方的搜索框中，它会自动输入一些文字进行过滤，使这里所显示的内容只有语音包。我们在这串文字的末尾，加上 zh 就可以找到中文语言包了。</p>
+</li>
+<li><p>一般来说我们所需要的语言包就是第 1 个，<code>Chinese (Simplified) Language Pack for Visual Studio Code</code>，点击它后面那个绿色的按钮（<code>Install</code>），就可以安装这个语言包.</p>
+<div class="image-box"><img src="/images/0006/3.png" alt=""></div>
+</li>
+<li><p>安装以后，我们可能还需要按照最前面几步去选择一下显示的语言；</p>
+</li>
+<li><p>如果这样操作之后，还没有成功的变为中文，就将编辑器关掉，重新打开一下。</p>
+</li>
+</ul>
+<div class="image-box"><img src="/images/0006/4.png" alt=""></div>
+<p>你说什么？这操作太复杂了。是啊，确实有一点。这是因为日常我们不会用这样的方式去操作软件，所以第 1 次接触觉得不太习惯。等你发现这个编辑器的一切操作，都可以通过这个小小的命令输入框去实现，你会逐渐感觉到他的美好和简单。当我们想做一个操作，却不知道应该到哪里去进行的时候，那么在命令框里搜索一下，基本都可以立刻将问题解决掉。</p>
 
   </div>
   
   <nav id="article-nav">
     <ul class="pagination justify-content-between">
       <li class="page-item ">
-        <a class="page-link" href="/stories/4/" aria-label="Previous">
+        <a class="page-link" href="/stories/5/" aria-label="Previous">
           <span aria-hidden="true">&laquo; 上一章</span>
           <span class="sr-only">上一章</span>
         </a>
@@ -141,7 +160,7 @@
         <a class="page-link" href="#">Top ▲<span class="sr-only">返回顶部</span></a>
       </li>
       <li class="page-item ">
-        <a class="page-link" href="/stories/6/" aria-label="Next">
+        <a class="page-link" href="/stories/7/" aria-label="Next">
           <span aria-hidden="true">下一章 &raquo;</span>
           <span class="sr-only">下一章</span>
         </a>

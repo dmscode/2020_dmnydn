@@ -177,4 +177,56 @@
     
   </entry>
   
+  <entry>
+    <title>0006 工具</title>
+    <link href="https://dmnydn.com/stories/6/"/>
+    <id>https://dmnydn.com/stories/6/</id>
+    <published>2020-05-13T11:18:10.000Z</published>
+    <updated>2020-05-13T11:25:47.563Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;写代码这件事情，说起来总有那么点儿极客。如果用记事本去写，就丢掉了这种范儿，所以我们来装一个工具吧。&lt;/p&gt;
+&lt;p&gt;VSCode（ &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>0007 新建</title>
+    <link href="https://dmnydn.com/stories/7/"/>
+    <id>https://dmnydn.com/stories/7/</id>
+    <published>2020-05-13T11:18:17.000Z</published>
+    <updated>2020-05-13T11:25:08.930Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在拥有了像小老鼠一样帅气的编辑器，让我们开始吧。&lt;/p&gt;
+&lt;p&gt;和几乎一切软件一样，我们可以按 &lt;code&gt;Ctrl+N&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="stories" scheme="https://dmnydn.com/categories/stories/"/>
+    
+    
+  </entry>
+  
 </feed>
